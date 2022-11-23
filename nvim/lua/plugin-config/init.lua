@@ -1,0 +1,5 @@
+require('plugin-config/packer-config')
+require('plugin-config/lua-line')
+require('plugin-config/treesitter')
+require('plugin-config/nvim-cmp')
+--require('plugin-config/autopairs')
