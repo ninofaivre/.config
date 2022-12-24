@@ -1,6 +1,13 @@
 -- 42 header
-vim.g['user42'] = 'nfaivre'
-vim.g['mail42'] = 'nfaivre@student.42.fr'
+vim.g['42user'] = 'nfaivre'
+vim.g['42mail'] = 'nfaivre@student.42.fr'
+vim.g['countryCode'] = 'zz'
+vim.g['commentTable'] =
+{
+	["<3"]	= { start = "<3", fill = "=", ["end"] = "<3", ["width"] = 200 },
+	test	= { start = "te", fill = "-", ["end"] = "st" }
+}
+vim.g['42HeaderWidth'] = 120
 -- 42 header
 
 -- neovide

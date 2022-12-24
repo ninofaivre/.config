@@ -1,5 +1,1 @@
-require('settings')
-require('plugin-config')
-require('vars')
-require('mappings')
-require('theme')
+require("new-nino")

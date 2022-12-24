@@ -1,19 +1,16 @@
 return require 'packer'.startup(function()
 	-- Packer
-	--
 	use 'wbthomason/packer.nvim'
-	--
 	-- Packer
 
 	-- Themes
-	--
 	--use 'folke/tokyonight.nvim'
 	use "EdenEast/nightfox.nvim"
-	--
 	-- Themes
 
 	-- Plugins
-	use 'ninofaivre/Header42.nvim' -- mine
+	-- use 'ninofaivre/42Header.nvim' -- mine <3
+	use '~/Programmation/Personal/42Header.nvim'
 	use 'dense-analysis/ale' -- syntax analyzer
 	use "nvim-lua/plenary.nvim"
 	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }  -- git diff and conflict resolver
@@ -27,11 +24,11 @@ return require 'packer'.startup(function()
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-	use
-	{
-		'romgrk/barbar.nvim',
-		requires = { 'nvim-tree/nvim-web-devicons' }
-	}
+	--use
+	--{
+	--	'romgrk/barbar.nvim',
+	--	requires = { 'nvim-tree/nvim-web-devicons' }
+	--}
 	-- nvim-cmp
 	use 'neovim/nvim-lspconfig'
 	use 'hrsh7th/cmp-nvim-lsp'
