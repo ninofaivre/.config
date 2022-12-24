@@ -272,6 +272,11 @@ globalkeys = gears.table.join(
             end
         end,
         {description = "go back", group = "client"}),
+	
+	-- (tmp) Volume Control
+	awful.key({}, "XF86AudioRaiseVolume", function () awful.util.spawn("pamixer -i 1", false) end),
+	awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("pamixer -d 1", false) end),
+	awful.key({}, "XF86AudioMute", function () awful.util.spawn("pamixer -t", false) end),
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
@@ -448,8 +453,10 @@ root.keys(globalkeys)
 awful.rules.rules = {
     -- All clients will match this rule.
     { rule = { },
-      properties = { border_width = beautiful.border_width,
-                     border_color = beautiful.border_normal,
+      properties = { --border_width = beautiful.border_width,
+					 border_width = 4,
+                     --border_color = beautiful.border_normal,
+					 border_color = "#cecece00",
                      focus = awful.client.focus.filter,
                      raise = true,
                      keys = clientkeys,
@@ -458,6 +465,12 @@ awful.rules.rules = {
                      placement = awful.placement.no_overlap+awful.placement.no_offscreen
      }
     },
+
+	{ rule = { name = "Battle.net" },
+  	  properties = { fullscreen = true, focus = true } },
+
+	{ rule = { name = "Overwatch" },
+  	  properties = { fullscreen = true, focus = true } },
 
     -- Floating clients.
     { rule_any = {
@@ -492,7 +505,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
