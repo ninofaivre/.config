@@ -13,6 +13,9 @@ lsp.ensure_installed({
 lsp.configure('sumneko_lua', {
 	settings = {
 		Lua = {
+			runtime = {
+				version = "LuaJIT",
+			},
 			diagnostics = {
 				globals = { 'vim' }
 			}
