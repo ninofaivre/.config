@@ -1,0 +1,5 @@
+backend: kitty
+
+fonts:
+  - FiraCode
+font_size: 10
