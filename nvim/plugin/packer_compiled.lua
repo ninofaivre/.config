@@ -77,7 +77,19 @@ _G.packer_plugins = {
   ["42Header.nvim"] = {
     loaded = true,
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/42Header.nvim",
-    url = "/home/nino/Programmation/Personal/42Header.nvim/"
+    url = "/home/nino/Prog/Personal/42Header.nvim"
+  },
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
+  ["DarkLightToggle.nvim"] = {
+    config = { "\27LJ\2\nä\1\0\0\6\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0'\3\4\0005\4\6\0005\5\5\0=\5\a\0045\5\b\0=\5\t\4B\0\4\1K\0\1\0\bend\1\0\1\thour\3\20\nstart\1\0\0\1\0\1\thour\3\6\rnightfox\vdayfox\nsetup\20DarkLightToggle\frequire\0" },
+    loaded = true,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/DarkLightToggle.nvim",
+    url = "https://github.com/ninofaivre/DarkLightToggle.nvim"
   },
   LuaSnip = {
     loaded = true,
@@ -109,15 +121,20 @@ _G.packer_plugins = {
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["edgedb-vim"] = {
+    loaded = true,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/edgedb-vim",
+    url = "https://github.com/edgedb/edgedb-vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["lsp-zero.nvim"] = {
+  ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/nino/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -130,7 +147,6 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["nightfox.nvim"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme carbonfox\bcmd\bvim\0" },
     loaded = true,
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
@@ -145,10 +161,26 @@ _G.packer_plugins = {
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-markdown-preview"] = {
+    loaded = true,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/nvim-markdown-preview",
+    url = "https://github.com/davidgranstrom/nvim-markdown-preview"
+  },
+  ["nvim-projectconfig"] = {
+    loaded = true,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/nvim-projectconfig",
+    url = "https://github.com/windwp/nvim-projectconfig"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -160,11 +192,10 @@ _G.packer_plugins = {
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["project.nvim"] = {
-    config = { "\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17project_nvim\frequire\0" },
+  tabular = {
     loaded = true,
-    path = "/home/nino/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -180,18 +211,28 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nino/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-json"] = {
+    loaded = true,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/vim-json",
+    url = "https://github.com/elzr/vim-json"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/home/nino/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/plasticboy/vim-markdown"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: project.nvim
-time([[Config for project.nvim]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\17project_nvim\frequire\0", "config", "project.nvim")
-time([[Config for project.nvim]], false)
--- Config for: nightfox.nvim
-time([[Config for nightfox.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme carbonfox\bcmd\bvim\0", "config", "nightfox.nvim")
-time([[Config for nightfox.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
+-- Config for: DarkLightToggle.nvim
+time([[Config for DarkLightToggle.nvim]], true)
+try_loadstring("\27LJ\2\nä\1\0\0\6\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0'\3\4\0005\4\6\0005\5\5\0=\5\a\0045\5\b\0=\5\t\4B\0\4\1K\0\1\0\bend\1\0\1\thour\3\20\nstart\1\0\0\1\0\1\thour\3\6\rnightfox\vdayfox\nsetup\20DarkLightToggle\frequire\0", "config", "DarkLightToggle.nvim")
+time([[Config for DarkLightToggle.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

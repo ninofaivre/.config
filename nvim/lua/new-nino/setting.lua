@@ -26,3 +26,4 @@ vim.opt.termguicolors = true
 --vim.opt.hidden = true
 
 vim.opt.guifont = { "Fira Code", ":h8" }
+vim.o.exrc = true
