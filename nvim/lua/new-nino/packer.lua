@@ -56,7 +56,8 @@ return require('packer').startup(function(use)
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
 
-	use 'windwp/nvim-projectconfig'
+	-- use 'windwp/nvim-projectconfig'
+	use 'ahmedkhalf/project.nvim'
 	use(
 	{
 		'numToStr/Comment.nvim',
