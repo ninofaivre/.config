@@ -1,5 +1,4 @@
 backend: kitty
 
-fonts:
-  - FiraCode
-font_size: 10
+term_config_path: /home/nino/.config/kitty/glrnvim.conf
+nvim_exe_path: /home/nino/.local/bin/lvim
