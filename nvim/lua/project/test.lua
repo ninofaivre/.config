@@ -7,7 +7,7 @@ local lua_ls_config = {
     helloFromProjectConfig = "hello",
 		Lua = {
 			diagnostics = {
-				globals = { 'TESTOA' }
+				globals = { 'TESTOA', 'TESTOC' }
 			}
 		}
 	}

@@ -10,9 +10,13 @@ return  {
     config = function ()
       require("pProjectConfig").setup({
         projectsPath = vim.fn.stdpath('config') .. '/lua/project/',
-        lspConfigsPath = vim.fn.stdpath('config') .. '/lua/lazy/plugins/lsp/configs/'
+        lspConfigsPath = vim.fn.stdpath('config') .. '/lua/lazy/plugins/lsp/configs/',
+        instantTrigger = true
       })
-    end
+    end,
+    keys = {
+      { "<leader>Po", function () require("pProjectConfig").openOrCreateProject() end }
+    }
   }, {
 		"williamboman/mason-lspconfig.nvim",
 		config = function ()
@@ -48,6 +52,9 @@ return  {
 			require('nvim-treesitter.configs').setup({
 				auto_install = true,
         ignore_install = {},
+        ensure_installed = {},
+        modules = {},
+        sync_install = false,
 				highlight = {
 					enable = true
 				}

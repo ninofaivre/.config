@@ -14,4 +14,4 @@ vim.keymap.set('n', '<c-l>', cmd('tabnext'), opts)
 vim.keymap.set('n', '<c-ù>', cmd('source'), opts)
 
 -- TODO faire une commande qui override :w pour strip out ù et m'afficher quelque chose de rigolo
-vim.keymap.set('ia', 'nvide', 'neovide')
+-- vim.keymap.set('ia', 'nvide', 'neovide')
